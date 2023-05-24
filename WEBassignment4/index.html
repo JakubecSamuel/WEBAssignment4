@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>Počasie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Počasie</a>
+            <a href="details.html">Štatistika</a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Počasie</h1>
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input id="city" type="text" placeholder="Zadaj mesto">
+            <button id="search" class="fa-solid fa-magnifying-glass"></button>
+            <button onclick="getCurrentWeather()">GPS</button>
+        </div>
+        <br>
+        <div id="weather-info">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="Weather icon">
+            <p id="temperature"></p>
+            <p id="weather-description"></p>
+            <p id="coordinates"></p>
+            <p id="country-flag"></p>
+        </div>
+
+        <div id="weatherResult">
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

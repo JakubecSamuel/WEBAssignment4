@@ -1,0 +1,202 @@
+
+@font-face {
+    font-family: 'Solis';
+    src: url('https://www.awxcdn.com/adc-assets/fonts/solis-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+  font-family: 'Solis', sans-serif;
+  background-image: url(oblak.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: #1C1C1E;
+}
+
+.container {
+  font-family: 'Solis', sans-serif;
+  background-color: #56665e;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  padding: 20px;
+  max-width: 600px;
+  min-width: 600px;
+}
+
+input, button {
+    font-size: 1em;
+    padding: 10px;
+    margin: 5px;
+}
+
+#weather-info {
+    margin-top: 5%;
+    display: none;
+    text-align: center;
+    color: #1C1C1E;
+}
+#weather-info img {
+    width: 25%;
+}
+
+#weather-info h2 {
+    display: block;
+    margin: 0;
+    color: #1C1C1E;
+  }
+  
+  #weather-info img {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  #weather-info p {
+    display: inline-block;
+    margin: 0;
+    color: #1C1C1E;
+  }
+
+  #city-name{
+    font-size: 4rem;
+  }
+  #temperature{
+    font-size: 4rem;
+  }
+  #weather-description{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  #coordinates{
+    font-size: 24px;
+    font-weight: bold;
+    color: #1C1C1E;
+  }
+  
+  #weather-description, #temperature {
+    display: inline-block;
+    width: 50%;
+    color: #1C1C1E;
+  }
+  
+  #coordinates, #country-flag {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box i{
+    font-size: 30px;
+}
+.search-box input{
+    color: #1C1C1E;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #a5a5a5;
+    text-transform: uppercase;
+    border-radius: 18px;
+}
+
+.search-box input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1C1C1E;
+    text-transform: uppercase;
+}
+
+.search-box button{
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #1C1C1E;
+    background: #56665e;
+    border-radius: 50%;
+    font-size: 22px;
+}
+#details-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #details-table th,
+  #details-table td {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #ccc;
+  }
+  
+  #details-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  #details-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #details-table tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #1C1C1E;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      margin: 10px 0;
+      display: block;
+    }
+  }
+  
+  #timeRangeChart{
+    max-width: 600px;
+    color: black
+  }
